@@ -1,0 +1,123 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.service-card i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-option i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.contact-option span {
+  font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media li a {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.social-media li a i {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.social-media li a:hover {
+  color: #2196F3;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  section {
+    margin: 0 10px;
+  }
+
+  .service-card {
+    display: block;
+  }
+
+  .contact-option {
+    flex-wrap: wrap;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .service-card i {
+    font-size: 1.5em;
+  }
+}
