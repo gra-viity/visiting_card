@@ -1,4 +1,5 @@
 body {
+  border: 2px red solid;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -11,7 +12,14 @@ header {
   padding: 20px 0;
 }
 
+#logo-img {
+  display: flex;
+  align-items: center;
+
+}
+
 .logo {
+  align-content: center;
   font-size: 2em;
   font-weight: 700;
 }
@@ -52,19 +60,33 @@ h2 {
   margin-bottom: 10px;
 }
 
-.contact-option {
+.contact-us {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.contact-details h4 {
   margin-bottom: 10px;
 }
 
-.contact-option i {
-  font-size: 1.5em;
-  margin-right: 10px;
+.contact-details li {
+  margin-bottom: 5px;
 }
 
-.contact-option span {
-  font-weight: 500;
+.contact-details li img {
+  margin-right: 5px;
+}
+
+
+.office-address p {
+  display: flex;
+  align-items: center;
+}
+
+.office-address p img {
+  margin-right: 5px;
 }
 
 .social-media {
@@ -83,9 +105,9 @@ h2 {
   color: #333;
 }
 
-.social-media li a i {
-  font-size: 1.2em;
-  margin-right: 5px;
+.social-media li a img {
+  width: 30px;
+  height: 30px;
 }
 
 .social-media li a:hover {
@@ -103,7 +125,7 @@ h2 {
     display: block;
   }
 
-  .contact-option {
+  .contact-us {
     flex-wrap: wrap;
   }
 
@@ -119,5 +141,18 @@ h2 {
 
   .service-card i {
     font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
+
+  .service-card {
+    width: 25%;
+    margin: 10px;
   }
 }
